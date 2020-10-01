@@ -1,0 +1,85 @@
+
+
+/*--MIXIN MEDIA QUERIES--*/
+
+@mixin xs {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: 576px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+
+/*--MIXIN BOTONES--*/
+
+@mixin main-buttons {
+    background-color: $red-primary;
+    color: $white;
+    font-size: 0.7em;
+    font-weight: bolder;
+    cursor: pointer;
+    &:hover {
+        background-color: $red-secondary;
+        color: $white;
+        font-size: 0.7em;
+    }
+}
+
+@mixin icon-circle {
+    background-color: $white;
+    width: 2.3rem;
+    height: 2.3rem;
+    box-sizing: border-box;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 1px rgba(52, 58, 64, 0.5);
+    cursor: pointer;
+    &:hover {
+        background-color: $red-primary;
+    }
+}
+
+@mixin wsp-btn {
+    background-color: #26d367;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $white;
+    box-sizing: border-box;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 1px rgba(52, 58, 64, 0.5);
+    cursor: pointer;
+    &:hover {
+        background-color: $black;
+    }
+}
+
+@mixin titulos-rojos {
+    font-family: 'Montserrat', sans-serif;
+    color: $red-secondary;
+    font-weight: bolder;
+}
+ h2 {
+     @include titulos-rojos
+ }

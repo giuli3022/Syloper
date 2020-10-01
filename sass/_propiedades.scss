@@ -1,0 +1,76 @@
+@import "./variables";
+@import "./mixins";
+
+html {
+    scroll-behavior: smooth;
+}
+
+#propiedades {
+    font-family: $font;
+}
+
+.props-nav-aside {
+    h3 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    h5 {
+        font-size: 1em;
+        font-weight: 900;
+    }
+    ul {
+        color: black;
+        padding-left: 0;
+        li {
+            font-size: 0.9em;
+            list-style: none;
+            color: #5b5b5f;
+            padding-left: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.props-container {
+    @include xl {
+        margin-right: 4em;
+    }
+}
+
+/*--BOX DE PROPS CARDS--*/
+
+.props-cards-box {
+    h2 {
+        color: $red-secondary;
+        font-weight: bolder;
+    }
+}
+
+.props-card {
+    a {
+        color: $black;
+        text-decoration: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    img {
+        transition: transform 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .card-body {
+        width: 100%;
+        color: $black;
+        padding: 0 !important;
+        font-size: 10px;
+        h6 {
+            font-size: 12px;
+        }
+    }
+}
+
+.fa-search {
+    color: $red-primary;
+    font-size: 12px;
+}

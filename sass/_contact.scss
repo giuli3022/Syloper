@@ -1,0 +1,31 @@
+@import "./variables";
+@import "./mixins";
+
+/*--CONTACT BOX--*/
+
+.contact-box {
+
+    input,
+    textarea {
+        color: $black;
+        font-family: $font;
+        font-size: 0.7em;
+        outline: none;
+    }
+}
+
+.send-btn-box {
+    width: 100%;
+    @include lg {
+        width: 25%;
+        margin-left: 75%;
+    }
+    @include xl {
+        width: 25%;
+        margin-left: 75%;
+    }
+}
+
+#send-btn {
+    width: 100%;
+}

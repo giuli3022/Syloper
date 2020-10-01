@@ -1,0 +1,40 @@
+@import "./variables";
+@import "./mixins";
+
+
+/*--GENERAL--*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#individual {
+    font-family: $font;
+}
+
+/*--Contact aside box--*/
+
+.contact-box {
+    h3 {
+        color: $red-secondary;
+    }
+}
+
+/*--Info box--*/
+
+.info-ind-box {
+    @include md {
+        margin-left: 11em;
+    }
+    @include lg {
+        margin-left: 11em;
+    }
+    @include xl {
+        margin-left: 11em;
+    }
+}
+
+.fa-angle-right {
+    color: $red-primary;
+}
